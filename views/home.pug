@@ -2,10 +2,10 @@ extends layouts/main
 include mixins/videoBlock
 block content
     .videos
-        each item in video
+        each item in videos
             +videoBlock({
                 id:item.id,
                 title:item.title,
                 view:item.views,
-                videoFile:item.videoFile
+                videoFile:item.fileUrl
             })
